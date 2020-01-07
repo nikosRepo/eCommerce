@@ -12,8 +12,7 @@ const StripeCheckoutButton = ({ price }) => {
       method: "post",
       data: {
         amount: priceForStripe,
-        token: token,
-        payment_method_types: ["card"]
+        token: token
       }
     })
       .then(response => {
